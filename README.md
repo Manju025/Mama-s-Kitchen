@@ -2,6 +2,8 @@
 
 This is a React-based restaurant web application that provides a user-friendly interface to explore different menu items, learn about the restaurant, and navigate through various pages with smooth animations.
 
+### Live link: [https://mamas-kitchen-manju.netlify.app/](https://mamas-kitchen-manju.netlify.app/)
+
 ## Features
 
 - Home page with welcome and featured information
