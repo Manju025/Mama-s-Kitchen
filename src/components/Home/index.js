@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../Header";
-
 import Footer from "../Footer";
 import "./index.css";
 
@@ -28,7 +28,7 @@ const Home = () => (
     </div>
 
     <div className="home-secondary">
-      <div className="home-sec-container">
+      <div className="home-sec-container col-12 col-md-10 col-lg-11 mx-auto">
         <div className="home-sec-left">
           <img src="/legPiece.svg" alt="svg" className="home-svg1" />
           <div className="hh-con">
@@ -49,7 +49,7 @@ const Home = () => (
     <div className="home-secondary">
       <div className="home-sec-container">
         <div className="images">
-          <img src="/pizza.jpg" alt="img" className="img im" />
+          <img src="/pizza.jpg" alt="img" className="img im ii" />
         </div>
         <div className="home-sec-left">
           <img src="/Vector.svg" alt="svg" className="home-svg2" />
@@ -64,8 +64,8 @@ const Home = () => (
       </div>
     </div>
     <div className="home-secondary">
-      <div className="home-sec-container">
-        <div className="home-sec-left">
+      <div className="home-third-container">
+        <div className="home-third-left">
           <img src="/burger.svg" alt="svg" className="home-svg1" />
           <div className="hh-con">
             <h1 className="home-hh">AMERICAN-STYLE BURGERS</h1>
@@ -85,3 +85,4 @@ const Home = () => (
 );
 
 export default Home;
+
