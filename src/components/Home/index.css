@@ -1,0 +1,111 @@
+.home-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url("../../../public/home-bgImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 75%;
+  color: white
+}
+
+.home-h {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: italic;
+  color: #fcac2b;
+  margin-bottom: 0px;
+}
+
+.home-p {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  color: #dcdad8;
+  text-align: center;
+}
+
+.home-secondary {
+  background: #093028;
+  background: -webkit-linear-gradient(to right, #237A57, #093028);
+  background: linear-gradient(to right, #237A57, #093028);
+  height: 100vh;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.home-sec-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.hh-con {
+  padding-left: 25px;
+  padding-right: 185px;
+}
+
+.home-sec-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-svg1 {
+  align-self: center;
+  padding-right: 350px;
+  width: 100px;
+}
+
+.home-hh {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: italic;
+  color: rgb(252, 172, 43);
+  margin-bottom: 0px; 
+}
+
+.home-pp {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: #dcdad8;
+}
+
+.img {
+  width: 400px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 25px 5px rgba(19, 18, 18, 0.9);
+}
+
+.im:hover,
+.im:focus {
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 0px 10px 10px rgba(252, 172, 43, 0.9);
+}
+
+.hhh-con {
+  padding-right: 25px;
+  padding-left: 185px;
+  width: 525x;
+}
+
+.home-svg2 {
+  align-self: center;
+  padding-left: 100px;
+  width: 100px;
+}
+
+.img1 {
+  width: 470px;
+}
