@@ -28,7 +28,7 @@ const Home = () => (
     </div>
 
     <div className="home-secondary">
-      <div className="home-sec-container col-12 col-md-10 col-lg-11 mx-auto">
+      <div className="home-sec-container">
         <div className="home-sec-left">
           <img src="/legPiece.svg" alt="svg" className="home-svg1" />
           <div className="hh-con">
