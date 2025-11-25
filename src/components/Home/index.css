@@ -2,7 +2,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url("../../../public/home-bgImage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 95vh;
+    height: 100vh;
     padding-bottom: 40px;
     padding-left: 100px;
     padding-right: 100px;
@@ -35,12 +35,11 @@
 }
 
 .home-secondary {
-  background: #093028;
-  background: -webkit-linear-gradient(to right, #237A57, #093028);
-  background: linear-gradient(to right, #237A57, #093028);
-  height: 100vh;
+  background: linear-gradient(to right, #237A57, #0e453b);
+  height: 75vh;
   padding-left: 100px;
   padding-right: 100px;
+  padding-top: 50px;
 }
 
 .home-sec-container {
@@ -59,6 +58,18 @@
 .home-sec-left {
   display: flex;
   flex-direction: column;
+}
+
+.home-third-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.home-third-left {
+  width: 50%;
 }
 
 .home-svg1 {
@@ -86,6 +97,39 @@
   width: 400px;
   border-radius: 18px;
   box-shadow: 0px 0px 25px 5px rgba(19, 18, 18, 0.9);
+  animation: imageScroll linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes imageScroll {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.ii {
+  animation: imageScroll1 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes imageScroll1 {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .im:hover,
@@ -107,5 +151,43 @@
 }
 
 .img1 {
+  width: 350px;
+  margin-right: 150px;
+  transition: all 0.3s ease;
+}
+
+
+.img1:hover,
+.img1:focus {
+  transition: all 0.3s ease;
   width: 470px;
+  margin-right: 75px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .home-sec-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .hh-con, .hhh-con {
+    padding: 0;
+  }
+
+  .home-sec-left {
+    margin-top: 40px;
+  }
+
+  .home-svg1, .home-svg2 {
+    padding: 0;
+  }
+
+  .img, .img1 {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
